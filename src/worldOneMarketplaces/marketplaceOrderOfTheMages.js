@@ -77,9 +77,7 @@ let potionsMenu = {
     'HP 40': 30
 }
 const orderOfTheMagesMarketplace = new Marketplace(weaponsMenu,scrollsMenu,clothingMenu,potionsMenu)
-orderOfTheMagesMarketplace.renderWeaponsItems()
-orderOfTheMagesMarketplace.renderScollsItems()
-orderOfTheMagesMarketplace.renderClothingItems()
-orderOfTheMagesMarketplace.renderPotionsItems()
+
+
 
 
