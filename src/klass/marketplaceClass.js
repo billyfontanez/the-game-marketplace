@@ -55,10 +55,12 @@ class Marketplace{
             '2. Scrolls\n',
             '3. Clothing\n',
             '4. Potions\n'
-            )
-    }
-}
+        )
+    };
 
+    marketplaceProcess
+}
+//sample input
 let weaponsMenu = {
     'Ax of the Wood Elfs': 10,
     'Dark Sword': 15,
