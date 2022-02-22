@@ -8,7 +8,7 @@ class Marketplace{
     };
 
 
-    renderWeaponsItems () {
+    renderWeaponsItems = () => {
         console.log(`
         Our Current Weapons are:
         1. ${Object.getOwnPropertyNames(this.weaponsMenu)[0]}: $${Object.values(this.weaponsMenu)[0]}
@@ -18,7 +18,7 @@ class Marketplace{
         `)
     };
 
-    renderScollsItems () {
+    renderScollsItems = () => {
         console.log(`
         Our Current Scrolls are:
         1. ${Object.getOwnPropertyNames(this.scrollsMenu)[0]}: $${Object.values(this.scrollsMenu)[0]}
@@ -28,7 +28,7 @@ class Marketplace{
         `)
     };
 
-    renderClothingItems () {
+    renderClothingItems = () => {
         console.log(`
         Our Current Clothing is:
         1. ${Object.getOwnPropertyNames(this.clothingMenu)[0]}: $${Object.values(this.clothingMenu)[0]}
@@ -38,7 +38,7 @@ class Marketplace{
         `)
     };
 
-    renderPotionsItems () {
+    renderPotionsItems = () => {
         console.log(`
         Our Current Potions are: 
         1. ${Object.getOwnPropertyNames(this.potionsMenu)[0]}: $${Object.values(this.potionsMenu)[0]} 
@@ -47,6 +47,16 @@ class Marketplace{
         4. ${Object.getOwnPropertyNames(this.potionsMenu)[3]}: $${Object.values(this.potionsMenu)[3]}
         `)
     };
+
+    renderMarketplaceMenu = () => {
+        console.log(
+            'Please Select a Menu by entering the associated Number:\n',
+            '1. Weapons\n',
+            '2. Scrolls\n',
+            '3. Clothing\n',
+            '4. Potions\n'
+            )
+    }
 }
 
 let weaponsMenu = {
@@ -77,6 +87,7 @@ let potionsMenu = {
     'HP 40': 30
 }
 const orderOfTheMagesMarketplace = new Marketplace(weaponsMenu,scrollsMenu,clothingMenu,potionsMenu)
+orderOfTheMagesMarketplace.renderMarketplaceMenu()
 
 
 
